@@ -1,6 +1,6 @@
 import sys
 import os
-from PyQt5.QtWidgets import *
+from PyQt5.QtWidgets import QLabel,QPushButton,QHBoxLayout,QVBoxLayout,QMainWindow,QWidget,QApplication
 from PyQt5.QtGui import QPixmap
 from PyQt5.QtCore import Qt
 from random import randint
@@ -211,8 +211,6 @@ class MaFenetre(QMainWindow): #Ma fenetre du jeu du pendu
                     self.etatBoutons(True)
                 else:
                     self.mettreAJour()
-                    
-            
                 
             elif self.nbEssaie != 0:
                 self.mettreAJour()
@@ -268,12 +266,6 @@ class MaFenetre(QMainWindow): #Ma fenetre du jeu du pendu
         self.etatBoutons(False)
         
         
-    
-        
-        
-        
-        
-
 
 app = QApplication([])
 fenetre = MaFenetre()
